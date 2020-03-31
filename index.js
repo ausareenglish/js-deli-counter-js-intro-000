@@ -1,13 +1,23 @@
 // Deli functions
 
 // greets a new customer with their name and their number in line
-function takeANumber(line, name) {
+//function takeANumber(line, name) {
   // adds the person's name to the end of the array
-  line.push(name);
+ // line.push(name);
   
   //returns a string greeting including the person's name and their number in line
-  return `Welcome, ${name}. You are number ${line.indexOf(name) + 1} in line.`
+ // return `Welcome, ${name}. You are number ${line.indexOf(name) + 1} in line.`
+ // 
+ // }
   
+  function takeANumber(line) {
+    
+    var ticketNumber = 1;
+    
+    line.push(ticketNumber) ;
+    return `Welcome, you are customer ${ticketNumber}.`
+    ticketNumber++;
+    
   }
   
   //returns the name of the first person in line and removes them from the line
